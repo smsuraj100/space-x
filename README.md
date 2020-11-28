@@ -85,5 +85,5 @@ I have implement the code spliting using lazy loading. Performance and Best Prac
 ### Live URL
 
 I have hosted it on firebase.
-Github - [https://github.com/smsuraj100/space-x] (https://github.com/smsuraj100/space-x)
-Live - [https://spacex-e44b4.web.app/] (https://spacex-e44b4.web.app/)
+- Github: https://github.com/smsuraj100/space-x
+- Live demo: https://spacex-e44b4.web.app/
