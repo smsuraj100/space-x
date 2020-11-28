@@ -78,9 +78,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Lighthouse scores
 
-I have implement the code spliting using lazy loading. Performance and Best Practices score can be improved by using CDN URLs for images which is taking significant amount of time.
-![image](https://user-images.githubusercontent.com/16137686/100527530-45a52280-31f9-11eb-9c24-91c3c9991c05.png)
-
+I have implement the code spliting using lazy loading. Performance score can be improved by using CDN URLs for images, which is taking significant amount of time.
+![image](https://user-images.githubusercontent.com/16137686/100528065-79cf1200-31fe-11eb-8565-7c6b8d4b9523.png)
 
 ### Live URL
 
