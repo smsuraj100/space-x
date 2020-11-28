@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div`
   width: 90%;
+  height:fit-content;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
