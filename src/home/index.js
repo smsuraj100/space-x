@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import debounce from "lodash.debounce";
 import { updateViewportType } from "./Actions";
@@ -15,8 +15,8 @@ import {
   BackdropFilter,
 } from "./styles";
 
-import FilterComponent from "../filters";
-import MissionCardComponent from "../mission-card";
+const FilterComponent = lazy(() => import("../filters"));
+const MissionCardComponent = lazy(() => import("../mission-card"));
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -76,17 +76,23 @@ const Home = () => {
             <FilterButton onClick={handleOnClickFilter}>Filter</FilterButton>
             {isModalOpen && (
               <BackdropFilter>
-                <FilterComponent onCloseClick={handleOnCloseClick} />
+                <Suspense fallback={""}>
+                  <FilterComponent onCloseClick={handleOnCloseClick} />
+                </Suspense>
               </BackdropFilter>
             )}
           </>
         ) : (
-          <FilterComponent onCloseClick={handleOnCloseClick} />
+          <Suspense fallback={""}>
+            <FilterComponent onCloseClick={handleOnCloseClick} />
+          </Suspense>
         )}
         <MissionContainer>
           {homePageData.length ? (
             homePageData.map((mission, i) => (
-              <MissionCardComponent key={i} mission={mission} />
+              <Suspense fallback={""}>
+                <MissionCardComponent key={i} mission={mission} />
+              </Suspense>
             ))
           ) : (
             <b>No records Found!!</b>
@@ -100,4 +106,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default React.memo(Home);
