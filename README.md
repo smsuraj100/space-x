@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Approach details
+- used functional components in react
+- used `hooks` for state variables and lifecycle events in react
+- used `styled-component` for specifying CSS
+- implemented the state management using `Redux`
+- followed proper folder structure for clear understanding of the project
+
+### Lighthouse scores
+
+I have implement the code spliting using lazy loading. Performance and Best Practices score can be improved by using CDN URLs for images which is taking significant amount of time.
+![image](https://user-images.githubusercontent.com/16137686/100527530-45a52280-31f9-11eb-9c24-91c3c9991c05.png)
+
+
+### Live URL
+
+I have hosted it on firebase.
+Github - [https://github.com/smsuraj100/space-x] (https://github.com/smsuraj100/space-x)
+Live - [https://spacex-e44b4.web.app/] (https://spacex-e44b4.web.app/)
