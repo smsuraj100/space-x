@@ -1,7 +1,17 @@
 import * as actionTypes from "./ActionTypes";
 
+const findInitialViewport = () => {
+  if (window.innerWidth < 700) {
+    return "MOBILE";
+  } else if (window.innerWidth >= 700 && window.innerWidth < 1024) {
+    return "TAB";
+  } else if (window.innerWidth >= 1024) {
+    return "DESKTOP";
+  }
+};
+
 const defaultState = {
-  viewport: "MOBILE",
+  viewport: findInitialViewport(),
   homePageData: [],
   isFetching: false,
   isSuccess: false,
