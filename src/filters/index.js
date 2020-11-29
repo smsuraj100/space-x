@@ -11,6 +11,7 @@ import {
   FilterTitle,
   FilterButtonsContainer,
   FilterButtons,
+  ResetButton,
 } from "./styles";
 import { launchYears } from "../constants";
 
@@ -38,6 +39,13 @@ const Filters = ({ onCloseClick }) => {
   const handleLandingStatusOnClick = (status) => {
     setLandingStatusSelected(status);
     handleOnApplyingFilter(yearSelected, launchStatusSelected, status);
+  };
+
+  const handleOnResetClick = () => {
+    setYearSelected(9999);
+    setLaunchStatusSelected("");
+    setLandingStatusSelected("");
+    handleOnApplyingFilter(9999, "", "");
   };
 
   const handleOnCloseClick = () => onCloseClick();
@@ -96,6 +104,7 @@ const Filters = ({ onCloseClick }) => {
           False
         </FilterButtons>
       </FilterButtonsContainer>
+      <ResetButton onClick={handleOnResetClick}>Reset</ResetButton>
     </FilterContainer>
   );
 };

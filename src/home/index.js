@@ -90,8 +90,8 @@ const Home = () => {
         <MissionContainer>
           {homePageData.length ? (
             homePageData.map((mission, i) => (
-              <Suspense fallback={""}>
-                <MissionCardComponent key={i} mission={mission} />
+              <Suspense key={i} fallback={""}>
+                <MissionCardComponent  mission={mission} />
               </Suspense>
             ))
           ) : (

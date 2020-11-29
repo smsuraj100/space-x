@@ -13,7 +13,7 @@ export const FilterContainer = styled.div`
     width: 30%;
     height: fit-content;
   }
-  
+
   @media (min-width: 1024px) {
     width: 20%;
     height: fit-content;
@@ -66,4 +66,9 @@ export const FilterButtons = styled.button`
   &:hover {
     background-color: #54bd58;
   }
+`;
+
+export const ResetButton = styled(FilterButtons)`
+  align-self: center;
+  background-color: #ffadb7;
 `;

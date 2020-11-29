@@ -1,6 +1,6 @@
 import * as actionTypes from "./ActionTypes";
 
-const findInitialViewport = () => {
+export const findInitialViewport = () => {
   if (window.innerWidth < 700) {
     return "MOBILE";
   } else if (window.innerWidth >= 700 && window.innerWidth < 1024) {
