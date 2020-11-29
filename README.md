@@ -73,7 +73,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - used functional components in react
 - used `hooks` for state variables and lifecycle events in react
 - used `styled-component` for specifying CSS
-- taken care of responsiveness for all the 3 devices
+- taken care of responsivness for all the 3 devices
 - provided a button for filter screen in mobile view
 - included `Reset` button to clear the filters
 - implemented the state management using `Redux`
