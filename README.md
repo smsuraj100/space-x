@@ -73,12 +73,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - used functional components in react
 - used `hooks` for state variables and lifecycle events in react
 - used `styled-component` for specifying CSS
+- taken care of responsiveness for all the 3 devices
+- provided a button for filter screen in mobile view
+- included `Reset` button to clear the filters
 - implemented the state management using `Redux`
 - followed proper folder structure for clear understanding of the project
+- included few test cases for `Business Logic Layer` of homepage
+- hosted it on firebase
 
 ### Lighthouse scores
 
-I have implement the code spliting using lazy loading. Performance score can be improved by using CDN URLs for images, which is taking significant amount of time.
+I have implement the code spliting using lazy loading and suspebse. Performance score can be improved by using CDN URLs for serving images, which is taking significant amount of time.
 ![image](https://user-images.githubusercontent.com/16137686/100528065-79cf1200-31fe-11eb-8565-7c6b8d4b9523.png)
 
 ### Live URL
