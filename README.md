@@ -81,6 +81,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - included few test cases for `Business Logic Layer` of homepage
 - hosted it on firebase
 
+### Code Coverage for Business Logic
+
+I have included few test cases for Business Logic Layer of homepage and have achieved 100% code coverage.
+![image](https://user-images.githubusercontent.com/16137686/101131751-d2057a00-362b-11eb-9596-1e38e0a71a8b.png)
+
 ### Lighthouse scores
 
 I have implement the code spliting using lazy loading and suspebse. Performance score can be improved by using CDN URLs for serving images, which is taking significant amount of time.
