@@ -88,7 +88,7 @@ I have included few test cases for Business Logic Layer of homepage and have ach
 
 ### Lighthouse scores
 
-I have implement the code spliting using lazy loading and suspebse. Performance score can be improved by using CDN URLs for serving images, which is taking significant amount of time.
+I have implement the code spliting using lazy loading and suspense. Performance score can be improved by using CDN URLs for serving images, which is taking significant amount of time.
 ![image](https://user-images.githubusercontent.com/16137686/101132901-c7e47b00-362d-11eb-8468-0c1546623f98.png)
 
 ### Live URL
