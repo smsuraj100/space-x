@@ -1,14 +1,6 @@
 import * as types from "./ActionTypes";
 
 /**
- * @description Request action for updating viewport type
- */
-export const updateViewportType = (payload) => ({
-  type: types.UPDATE_VIEWPORT,
-  payload,
-});
-
-/**
  * @description Request action for getting home page data
  */
 export const requestHomePageData = () => ({

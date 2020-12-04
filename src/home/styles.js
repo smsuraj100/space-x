@@ -26,31 +26,22 @@ export const Header = styled.label`
 
 export const Body = styled.div`
   display: flex;
-  flex-direction: ${({ isMobile }) => (isMobile ? "column" : "row")};
+  flex-direction: column;
   align-items: center;
 
   @media (min-width: 700px) {
     justify-content: space-around;
+    flex-direction: row;
     align-items: unset;
     margin-top: 20px;
   }
 
   @media (min-width: 1024px) {
     justify-content: space-around;
+    flex-direction: row;
     align-items: unset;
     margin-top: 20px;
   }
-`;
-
-export const FilterButton = styled.button`
-  width: 65px;
-  height: 30px;
-  font-size: 18px;
-  line-height: 24px;
-  border-radius: 5px;
-  align-self: flex-end;
-  margin-top: 10px;
-  margin-right: 10px;
 `;
 
 export const MissionContainer = styled.div`
@@ -73,16 +64,4 @@ export const Footer = styled.label`
   line-height: 22px;
   display: block;
   margin-bottom: 10px;
-`;
-
-export const BackdropFilter = styled.div`
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  backdrop-filter: blur(30px);
-  display: grid;
-  justify-content: flex-end;
-  z-index: 2;
-  overflow-y: scroll;
 `;

@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import { fetchFilteredData } from "../home/ActionCreators";
-import { ReactComponent as CloseIcon } from "../assests/icons/close.svg";
 
 import {
   FilterContainer,
   FilterHeader,
-  CloseButton,
   FilterTitle,
   FilterButtonsContainer,
   FilterButtons,
@@ -15,7 +13,7 @@ import {
 } from "./styles";
 import { launchYears } from "../constants";
 
-const Filters = ({ onCloseClick }) => {
+const Filters = () => {
   const dispatch = useDispatch();
 
   const [yearSelected, setYearSelected] = useState(9999);
@@ -48,20 +46,9 @@ const Filters = ({ onCloseClick }) => {
     handleOnApplyingFilter(9999, "", "");
   };
 
-  const handleOnCloseClick = () => onCloseClick();
-
-  const {
-    homepage: { viewport },
-  } = useSelector((state) => state);
-
   return (
     <FilterContainer>
       <FilterHeader>Filters</FilterHeader>
-      {viewport === "MOBILE" && (
-        <CloseButton onClick={handleOnCloseClick}>
-          <CloseIcon style={{ width: "100%", height: "100%" }} />
-        </CloseButton>
-      )}
       <FilterTitle>Launch Year</FilterTitle>
       <FilterButtonsContainer>
         {launchYears.map((year, i) => (

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FilterContainer = styled.div`
-  width: 100%;
+  width: 95%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -27,18 +27,6 @@ export const FilterHeader = styled.label`
   font-size: 22px;
   line-height: 24px;
   font-weight: 600;
-`;
-
-export const CloseButton = styled.button`
-  width: 25px;
-  height: 25px;
-  background: none;
-  padding: 0;
-  margin: 0;
-  border: none;
-  position: absolute;
-  right: 20px;
-  top: 10px;
 `;
 
 export const FilterTitle = styled.label`

@@ -1,20 +1,16 @@
 import reducer from "../Reducer";
 import * as types from "../ActionTypes";
-import { findInitialViewport } from "../Reducer";
 
 const payload = [{ test: "test" }];
-// const viewport = findInitialViewport();
-const viewport = "DESKTOP";
 
 const initialState = {
-  viewport: viewport,
   homePageData: [],
   isFetching: false,
   isSuccess: false,
   isError: false,
 };
 
-describe("home: reducer", () => {
+fdescribe("home: reducer", () => {
   it("should return the initial state", () => {
     expect(reducer(undefined, {})).toEqual(initialState);
   });

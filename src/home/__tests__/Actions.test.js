@@ -5,16 +5,7 @@ const payload = {
   test: "test data",
 };
 
-describe("home: actions", () => {
-  it("should create an action to update viewport value", () => {
-    const expectedAction = {
-      type: types.UPDATE_VIEWPORT,
-      payload,
-    };
-
-    expect(actions.updateViewportType(payload)).toEqual(expectedAction);
-  });
-
+fdescribe("home: actions", () => {
   it("should create an action to request homepage data", () => {
     const expectedAction = {
       type: types.REQUEST_HOME_PAGE_DATA,

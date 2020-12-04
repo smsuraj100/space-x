@@ -23,7 +23,7 @@ const sampleStore = {
 const store = mockStore(sampleStore);
 const mockResponse = [{ test: "test" }];
 
-describe("home: Action Creators", () => {
+fdescribe("home: Action Creators", () => {
   beforeEach(() => {
     /** Clear mocks and actions before each test run */
     store.clearActions();

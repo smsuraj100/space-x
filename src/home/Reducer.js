@@ -1,17 +1,6 @@
 import * as actionTypes from "./ActionTypes";
 
-export const findInitialViewport = () => {
-  if (window.innerWidth < 700) {
-    return "MOBILE";
-  } else if (window.innerWidth >= 700 && window.innerWidth < 1024) {
-    return "TAB";
-  } else if (window.innerWidth >= 1024) {
-    return "DESKTOP";
-  }
-};
-
 const defaultState = {
-  viewport: findInitialViewport(),
   homePageData: [],
   isFetching: false,
   isSuccess: false,
@@ -20,11 +9,6 @@ const defaultState = {
 
 const HomePageReducer = function (state = defaultState, action) {
   switch (action.type) {
-    case actionTypes.UPDATE_VIEWPORT:
-      return {
-        ...state,
-        viewport: action.payload,
-      };
     case actionTypes.REQUEST_HOME_PAGE_DATA:
       return {
         ...state,
